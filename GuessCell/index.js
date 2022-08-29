@@ -39,11 +39,3 @@ table.addEventListener("mouseover", (event) => {
   document.getElementById("changed").innerHTML = changedTds.length;
   finish();
 });
-
-// function addNum() {
-//     if (ggg.lenght != 10) {
-//       let num = Math.floor(Math.random() * 99) + 1;
-//       ttdd[num].classList.add("toFind");
-//       arr.push(num);
-//     }
-//   }
