@@ -1,0 +1,8 @@
+.one {
+  border: black solid 1px;
+  width: 30px;
+  height: 30px;
+}
+.red {
+  background-color: red;
+}
