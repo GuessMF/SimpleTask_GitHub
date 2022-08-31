@@ -7,10 +7,8 @@ keys.addEventListener("click", (event) => {
     event.target.tagName == "BUTTON" &&
     event.target.innerHTML !== "SPACE" &&
     event.target.innerHTML !== "CAPS LOCK" &&
-    event.target.innerHTML !== "DELETE" && // не работает ДЕЛИТ
     caps == false
   ) {
-    console.log(event.target.innerHTML);
     input.value += event.target.innerHTML;
   } else if (event.target.innerHTML == "SPACE") {
     input.value += " ";
@@ -20,8 +18,5 @@ keys.addEventListener("click", (event) => {
     caps = false;
   } else if (event.target.tagName !== "DIV") {
     input.value += event.target.innerHTML.toUpperCase();
-  } else if (event.target.innerHTML == "DELETE") {
-    input.value -= " ";
-    console.log("back");
   }
 });
